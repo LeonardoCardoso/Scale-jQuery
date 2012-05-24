@@ -1,0 +1,261 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Scale - LeoCardz</title>
+		<link rel="stylesheet" class="cssStatics" type="text/css" href="css/stylesheet.css" />
+		<script type="text/javascript" src="js/jquery.js" ></script>
+		<script type="text/javascript" src="js/scale.js" ></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('#scale').scale();			
+				$('#chrome').scale({event: "click"});
+				$('#foo').scale({event: "click", action: 'decrease'});			
+				$('#bar').scale({event: "mouseover", howMany: 40, scaleTime: 50});
+				$('#leo').scale({event: "click", howMany: '10', frequency: 'continuous'});
+				$('#hrz').scale({frequency: 'continuous', plane: 'horizontal', scaleTime: 25});
+				$('#vrt').scale({frequency: 'continuous', plane: 'vertical', action: 'decrease'});
+				$('#clock').scale({frequency: 'continuous', scaleTime: 1000, pixels: 3});
+			});
+		 </script>
+	</head>
+	<body >
+		<div class="bar">
+			<img src="img/leocardz.png" />
+		</div>
+		<div class="center">
+			<p>
+				<br />
+				
+				<table class="table" border="0" cellpadding="0" cellspacing="0" align="center" >
+					<tr >
+						<td width="150" style="border: 1px solid gainsboro; " >
+							<i>option</i>
+						</td>
+						<td width="150" style="border-top: 1px solid gainsboro; border-bottom: 1px solid gainsboro;" >
+							<i>default value</i>
+						</td>
+						<td width="150" style="border: 1px solid gainsboro; border-right: 0px;" >
+							<i>possible values</i>
+						</td>
+						<td width="250" style="border: 1px solid gainsboro;" >
+							<i>function</i>
+						</td>
+					</tr>
+					<tr>
+						<td width="100" style="border: 1px solid gainsboro; border-top: 0px; " >
+							event
+						</td>
+						<td style="border-bottom: 1px solid gainsboro; " >
+							
+						</td>
+						<td style="border: 1px solid gainsboro; border-top: 0px;  border-right: 0px; " >
+							click, mouseover
+						</td>
+						<td style="border: 1px solid gainsboro; border-top: 0px" >
+							event which the animation will start at
+						</td>
+					</tr>
+					<tr>
+						<td width="100" style="border: 1px solid gainsboro; border-top: 0px; " >
+							action
+						</td>
+						<td style="border-bottom: 1px solid gainsboro; " >
+							increase
+						</td>
+						<td style="border: 1px solid gainsboro; border-top: 0px; border-right: 0px; " >
+							increase, decrease
+						</td>
+						<td style="border: 1px solid gainsboro; border-top: 0px" >
+							animation behavior
+						</td>
+					</tr>
+					<tr>
+						<td width="100" style="border: 1px solid gainsboro; border-top: 0px; " >
+							howMany
+						</td>
+						<td style="border-bottom: 1px solid gainsboro; " >
+							20
+						</td>
+						<td style="border: 1px solid gainsboro; border-top: 0px;  border-right: 0px; " >
+							any integer
+						</td>
+						<td style="border: 1px solid gainsboro; border-top: 0px" >
+							how many times the element will be increased or decreased
+						</td>
+					</tr>
+					<tr>
+						<td width="100" style="border: 1px solid gainsboro; border-top: 0px; " >
+							initialSize
+						</td>
+						<td style="border-bottom: 1px solid gainsboro; " >
+							element width
+						</td>
+						<td style="border: 1px solid gainsboro; border-top: 0px; border-right: 0px; " >
+							any integer
+						</td>
+						<td style="border: 1px solid gainsboro; border-top: 0px" >
+							starting width
+						</td>
+					</tr>
+					<tr>
+						<td width="100" style="border: 1px solid gainsboro; border-top: 0px; " >
+							finalSize
+						</td>
+						<td style="border-bottom: 1px solid gainsboro; " >
+							element width
+						</td>
+						<td style="border: 1px solid gainsboro; border-top: 0px; border-right: 0px; " >
+							any integer
+						</td>
+						<td style="border: 1px solid gainsboro; border-top: 0px" >
+							final width
+						</td>
+					</tr>
+					<tr>
+						<td width="100" style="border: 1px solid gainsboro; border-top: 0px; " >
+							pixels
+						</td>
+						<td style="border-bottom: 1px solid gainsboro; " >
+							1
+						</td>
+						<td style="border: 1px solid gainsboro; border-top: 0px; border-right: 0px; " >
+							any integer
+						</td>
+						<td style="border: 1px solid gainsboro; border-top: 0px" >
+							how many pixels will be increased or decreased at once
+						</td>
+					</tr>
+					<tr>
+						<td width="100" style="border: 1px solid gainsboro; border-top: 0px; " >
+							scaleTime
+						</td>
+						<td style="border-bottom: 1px solid gainsboro; " >
+							0
+						</td>
+						<td style="border: 1px solid gainsboro; border-top: 0px; border-right: 0px; " >
+							any integer
+						</td>
+						<td style="border: 1px solid gainsboro; border-top: 0px" >
+							animation speed in milliseconds
+						</td>
+					</tr>
+					<tr>
+						<td width="100" style="border: 1px solid gainsboro; border-top: 0px; " >
+							keepScaling
+						</td>
+						<td style="border-bottom: 1px solid gainsboro; " >
+							no
+						</td>
+						<td style="border: 1px solid gainsboro; border-top: 0px; border-right: 0px; " >
+							yes, no
+						</td>
+						<td style="border: 1px solid gainsboro; border-top: 0px" >
+							if keepScalling is equal to yes, the animation will stop at inicialSize + howMany ou inicialSize - howMany
+						</td>
+					</tr>
+					<tr>
+						<td width="100" style="border: 1px solid gainsboro; border-top: 0px; " >
+							frequency
+						</td>
+						<td style="border-bottom: 1px solid gainsboro; " >
+							one
+						</td>
+						<td style="border: 1px solid gainsboro; border-top: 0px; border-right: 0px; " >
+							one, continuous
+						</td>
+						<td style="border: 1px solid gainsboro; border-top: 0px" >
+							if frequency is equal to continuous, the animation will keep being performed until there is a stop condition, if there's not it'll be performed forever
+						</td>
+					</tr>
+					<tr>
+						<td width="100" style="border: 1px solid gainsboro; border-top: 0px; " >
+							plane
+						</td>
+						<td style="border-bottom: 1px solid gainsboro; " >
+							both
+						</td>
+						<td style="border: 1px solid gainsboro; border-top: 0px; border-right: 0px; " >
+							vertical, horizontal
+						</td>
+						<td style="border: 1px solid gainsboro; border-top: 0px" >
+							orientation of animation
+						</td>
+					</tr>
+					
+				</table>
+				<br /><br />
+				
+				<code>
+					<div class="scale" >
+						<table>
+							<tr>
+								<td width="100" height="50" align="center" >
+									<div id="scale" style="background: blue; width: 40px; height: 30px;" ></div>
+								</td>
+								<td>
+									<span>$('#scale').scale();</span>
+								</td>
+							</tr>
+							<tr>
+								<td width="100" height="70" align="center" >
+									<img id="chrome" src="img/chrome.png" /> 
+								</td>
+								<td>	
+									<span>$('#chrome').scale({event: "click"}); </span>
+								</td>
+							</tr>
+							<tr>
+								<td width="100" height="50" align="center" >
+									<div id="foo" style="background: grey; width: 40px; height: 30px;" ></div>
+								</td>
+								<td>
+									<span>$('#foo').scale({event: "click", action: 'decrease'});</span>
+								</td>
+							</tr>
+							<tr>
+								<td width="100" height="70" align="center" >
+									<div id="bar" style="background: red; width: 30px; height: 20px;" ></div>
+								</td>
+								<td>
+									<span>$('#bar').scale({event: "mouseover", howMany: '40', scaleTime: 50});</span>
+								</td>
+							</tr>
+							<tr>
+								<td width="100" height="70" align="center" >
+									<div id="leo" style="background: green; width: 35px; height: 35px;" ></div>
+								</td>
+								<td>
+									<span>$('#leo').scale({event: "click", howMany: '10', frequency: 'continuous'});</span>
+								</td>
+							</tr>
+							<tr>
+								<td width="100" height="70" align="center" >
+									<div id="hrz" style="background: yellow; width: 35px; height: 35px;" ></div>
+								</td>
+								<td>
+									<span>$('#hrz').scale({frequency: 'continuous', plane: 'horizontal', scaleTime: 25});</span>
+								</td>
+							</tr>
+							<tr>
+								<td width="100" height="70" align="center" >
+									<div id="vrt" style="background: purple; width: 35px; height: 35px;" ></div>
+								</td>
+								<td>
+									<span>$('#vrt').scale({action: 'decrease', frequency: 'continuous', plane: 'vertical'});</span>
+								</td>
+							</tr>
+							<tr>
+								<td width="100" height="70" align="center" >
+									<div id="clock" style="background: black; width: 10px; height: 10px;" ></div>
+								</td>
+								<td>
+									<span>$('#clock').scale({frequency: 'continuous', scaleTime: 1000, pixels: 3});</span>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</code>
+			</p>
+		</div>
+	</body>
+</html>

@@ -2,6 +2,7 @@
 "name":"Scale",
 "version":"0.1.6",
 "title":"Scale",
+"description":"Scale whatever elements you want with jQuery",
 "keywords":["ui", "animation", "effect"],
 "author":"Leonardo Cardoso",
 "licences":[
